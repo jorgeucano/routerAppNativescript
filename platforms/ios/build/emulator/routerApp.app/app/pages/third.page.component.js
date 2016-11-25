@@ -6,7 +6,7 @@ var ThirdPageComponent = (function () {
     ThirdPageComponent = __decorate([
         core_1.Component({
             selector: "third",
-            template: "\n        <StackLayout>\n            <Label text=\"Second component\" class=\"title\"></Label>\n            <Button text=\"GO TO FIRST\" [nsRouterLink]=\"['/first']\" class=\"link\"></Button>\n        </StackLayout>\n    "
+            template: "\n        <StackLayout>\n            <Label text=\"Second component\" class=\"title\"></Label>\n            <Button text=\"GO TO FIRST\" [nsRouterLink]=\"['/first']\" class=\"link\"></Button>\n\n            <Button text=\"Clean Cache\" [nsRouterLink]=\"['/first']\" clearHistory=\"true\"></Button>\n        </StackLayout>\n    "
         }), 
         __metadata('design:paramtypes', [])
     ], ThirdPageComponent);
