@@ -1,0 +1,12 @@
+<ActionBar class="action-bar">
+  <StackLayout class="action-bar-title">
+    <Label text="Your App"></Label>
+  </StackLayout>
+</ActionBar>
+<GridLayout columns="80, *, auto" rows="auto, *" >
+    <Button col="0" text="Hola" ></Button>
+    <Button col="1" text="Hola 2" ></Button>
+    <Button col="2" text="Hola 3" ></Button>
+    // by default column and row are set to 0
+    <Button row="1" colSpan="3" text="Hola Largo" [nsRouterLink]="['/five']"  ></Button>
+</GridLayout>

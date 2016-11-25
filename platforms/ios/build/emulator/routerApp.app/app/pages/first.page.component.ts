@@ -3,21 +3,24 @@ import { Router, NavigationStart, NavigationEnd } from '@angular/router';
 
 import { RouterExtensions } from 'nativescript-angular/router';
 
+import {
+    FlexboxLayout,
+    FlexDirection,
+    FlexWrap,
+    JustifyContent,
+    AlignItems,
+    AlignContent,
+    AlignSelf
+} from "ui/layouts/flexbox-layout";
+
 @Component({
     selector: "first",
-    template: `
-        <StackLayout>
-            <Label text="First component" class="title"></Label>
-            <Button text="GO TO SECOND" [nsRouterLink]="['/second']" class="link"></Button>
-
-            <Button text="flip to next with function" (tap)="flipToNextPage()"></Button>
-            <Button text="flip to next with atribute" [nsRouterLink]="['/third']" pageTransition="flip"></Button>
-        </StackLayout>
-    `
+    templateUrl: './pages/first.page.component.html'
 })
 export class FirstPageComponent { 
 
     constructor(private routerExtensions: RouterExtensions){}
+    
     
     
     flipToNextPage() {

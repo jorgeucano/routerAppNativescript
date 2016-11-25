@@ -6,7 +6,7 @@ var SecondPageComponent = (function () {
     SecondPageComponent = __decorate([
         core_1.Component({
             selector: "second",
-            template: "\n        <StackLayout>\n            <Label text=\"Third component\" class=\"title\"></Label>\n            <Button text=\"GO TO Thrid\" [nsRouterLink]=\"['/third']\" class=\"link\"></Button>\n        </StackLayout>\n    "
+            templateUrl: './views/second.page.component.html'
         }), 
         __metadata('design:paramtypes', [])
     ], SecondPageComponent);

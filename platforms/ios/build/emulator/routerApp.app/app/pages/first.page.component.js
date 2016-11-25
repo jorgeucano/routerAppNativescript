@@ -17,7 +17,7 @@ var FirstPageComponent = (function () {
     FirstPageComponent = __decorate([
         core_1.Component({
             selector: "first",
-            template: "\n        <StackLayout>\n            <Label text=\"First component\" class=\"title\"></Label>\n            <Button text=\"GO TO SECOND\" [nsRouterLink]=\"['/second']\" class=\"link\"></Button>\n\n            <Button text=\"flip to next with function\" (tap)=\"flipToNextPage()\"></Button>\n            <Button text=\"flip to next with atribute\" [nsRouterLink]=\"['/third']\" pageTransition=\"flip\"></Button>\n        </StackLayout>\n    "
+            templateUrl: './pages/first.page.component.html'
         }), 
         __metadata('design:paramtypes', [router_1.RouterExtensions])
     ], FirstPageComponent);

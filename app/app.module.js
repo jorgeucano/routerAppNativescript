@@ -4,9 +4,18 @@ var platform_1 = require("nativescript-angular/platform");
 var router_1 = require("nativescript-angular/router");
 var routes_1 = require('./config/routes');
 var app_component_1 = require("./app.component");
+// flexbox
 var first_page_component_1 = require('./pages/first.page.component');
+//Absolute
 var second_page_component_1 = require('./pages/second.page.component');
+//Dock
 var third_page_component_1 = require('./pages/third.page.component');
+//Grid
+var four_page_component_1 = require('./pages/four.page.component');
+//Stack
+var five_page_component_1 = require('./pages/five.page.component');
+//Wrap
+var six_page_component_1 = require('./pages/six.page.component');
 var AppModule = (function () {
     function AppModule() {
     }
@@ -16,7 +25,10 @@ var AppModule = (function () {
                 app_component_1.AppComponent,
                 first_page_component_1.FirstPageComponent,
                 second_page_component_1.SecondPageComponent,
-                third_page_component_1.ThirdPageComponent
+                third_page_component_1.ThirdPageComponent,
+                four_page_component_1.FourPageComponent,
+                five_page_component_1.FivePageComponent,
+                six_page_component_1.SixPageComponent,
             ],
             bootstrap: [app_component_1.AppComponent],
             imports: [
