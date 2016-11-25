@@ -6,5 +6,5 @@ export const routes = [
     { path: "", redirectTo: "/first", pathMatch: "full" },
     { path: "first", component: FirstPageComponent },
     { path: "second", component: SecondPageComponent },
-    { path: "three", component: ThirdPageComponent }
+    { path: "third", component: ThirdPageComponent }
 ];

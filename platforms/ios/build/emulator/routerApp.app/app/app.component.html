@@ -1,3 +1,11 @@
 <StackLayout>
+    <StackLayout class="nav">
+        <Button text="First" 
+            [nsRouterLink]="['/first']"></Button>
+        <Button text="Second"
+            [nsRouterLink]="['/second']"></Button>
+            <Button text="Third"
+            [nsRouterLink]="['/third']"></Button>
+    </StackLayout>
     <router-outlet></router-outlet>
 </StackLayout>
